@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frontPageFragment">
+    <fragment
+        android:id="@+id/frontPageFragment"
+        android:name="com.example.homework3_moviefragment.FrontPageFragment"
+        android:label="fragment_front_page"
+        tools:layout="@layout/fragment_front_page" >
+        <action
+            android:id="@+id/action_frontPageFragment_to_aboutMe"
+            app:destination="@id/aboutMe" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutMe"
+        android:name="com.example.homework3_moviefragment.AboutMe"
+        android:label="AboutMe" />
+</navigation>

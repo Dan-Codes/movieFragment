@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Homework3_MovieFragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Daniel Li</string>
+    <string name="cis400">CIS400 Android Programming</string>
 </resources>
