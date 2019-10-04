@@ -3,8 +3,10 @@ package com.example.homework3_moviefragment
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -35,6 +37,9 @@ class FrontPageFragment : Fragment() {
         about_me.setOnClickListener {
             view.findNavController().navigate(R.id.action_frontPageFragment_to_aboutMe)
         }
+        task2.setOnClickListener {
+            //view.findNavController().navigate(R)
+        }
     }
 
     override fun onCreateView(
@@ -45,10 +50,12 @@ class FrontPageFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_front_page, container, false)
     }
 
+
     // TODO: Rename method, update argument and hook method into UI event
     fun onButtonPressed(uri: Uri) {
         listener?.onFragmentInteraction(uri)
     }
+
 
 //    override fun onAttach(context: Context) {
 //        super.onAttach(context)
