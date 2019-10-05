@@ -7,15 +7,47 @@
     <fragment
         android:id="@+id/frontPageFragment"
         android:name="com.example.homework3_moviefragment.FrontPageFragment"
-        android:label="fragment_front_page"
+        android:label="Welcome"
         tools:layout="@layout/fragment_front_page" >
         <action
             android:id="@+id/action_frontPageFragment_to_aboutMe"
             app:destination="@id/aboutMe"
-            app:launchSingleTop="false" />
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_frontPageFragment_to_movieFragment"
+            app:destination="@id/movieFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_frontPageFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_frontPageFragment_to_master_DetailFragment"
+            app:destination="@id/master_DetailFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/aboutMe"
         android:name="com.example.homework3_moviefragment.AboutMe"
-        android:label="AboutMe" />
+        android:label="About Me" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.homework3_moviefragment.MovieFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.homework3_moviefragment.ViewPagerFragment"
+        android:label="Movie Slides"
+        tools:layout="@layout/fragment_view_pager" />
+    <fragment
+        android:id="@+id/master_DetailFragment"
+        android:name="com.example.homework3_moviefragment.Master_DetailFragment"
+        android:label="Detail Flow"
+        tools:layout="@layout/fragment_master__detail" />
 </navigation>

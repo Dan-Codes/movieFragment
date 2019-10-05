@@ -15,6 +15,12 @@
         android:text="About Me" />
 
     <Button
+        android:id="@+id/task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task 1" />
+
+    <Button
         android:id="@+id/task2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
